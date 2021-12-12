@@ -8,10 +8,23 @@
 </head>
 <body>
 
-    <input type="text" id="myInput" value="hello">
-    
-    <script>
-        document.getElementById("myInput").setAttribute("value", "Hello World !")
+    <style>
+        .my-class{
+            width: 250px;
+            height: 200px;
+            background-color: rgb(184, 65, 18);
+        }
+    </style>
+
+    <!-- 
+        <input type="text" id="myInput" value="hello">
+     -->
+    <script type="text/javascript">
+        // document.getElementById("myInput").setAttribute("value", "Hello World");
+
+        let myElement = document.createElement("input");
+        myElement.setAttribute('class', 'my-class')
+        document.body.appendChild(myElement)
     </script>
 
 </body>
