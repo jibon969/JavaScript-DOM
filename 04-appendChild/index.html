@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppendChild</title>
+</head>
+<body>
+    
+    <p>Example 1</p>
+    <ul id="myList">
+        <li>Apple</li>
+    </ul>
+
+    <p>Example 2</p>
+    <ol id="newItem">
+        <li>Apple</li>
+    </ol>
+
+
+    <script type="text/javascript">
+        // parent Element
+        // const myList = document.getElementById("myList");
+
+        // // Add new item
+        // let newItem = document.createElement("li");
+        // newItem.textContent = "Banana";
+        // myList.appendChild(newItem)
+
+        // using loop
+        const newItem  = document.getElementById("newItem");
+        const fruitList = ["Mango", "Apple", "Orange"]
+
+        for(let fruit of fruitList){
+            let newItemList = document.createElement("li");
+            newItemList.textContent = fruit;
+            newItem.appendChild(newItemList)
+        }
+
+    </script>
+
+</body>
+</html>
