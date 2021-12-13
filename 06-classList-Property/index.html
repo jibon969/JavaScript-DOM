@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classList Property </title>
+</head>
+<body>
+    <style>
+        .bold{
+            font-weight: bold;
+        }
+        .red-bg{
+            background-color: red;
+        }
+        .white-text{
+            color: white;
+        }
+        .big-font{
+           font-size: 36px;
+        }
+    </style>
+
+    <p id="myPara">Hello World</p>
+
+    <script type="text/javascript">
+        const myPara = document.getElementById("myPara");
+        // myPara.classList.add('bold');
+
+        // add multiple class
+        myPara.classList.add('bold', 'red-bg', 'big-font');
+
+        // remove class
+        myPara.classList.remove("red-bg");
+
+        // replace
+        myPara.classList.replace("big-font", "red-bg");
+
+        // myPara.classList.toggle("red-bg");
+
+        console.log(myPara.classList);
+
+        // Check use and not use class
+        console.log(myPara.classList.contains('white-text'));
+
+    </script>
+
+</body>
+</html>
