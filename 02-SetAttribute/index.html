@@ -13,6 +13,15 @@
             width: 250px;
             height: 200px;
             background-color: rgb(184, 65, 18);
+            border-radius: 2px solid rgb(56, 63, 160);
+        }
+        #new{
+            border: 2px solid red;
+            width: 440px;
+            height: 440px;
+            background-image: url("/02-SetAttribute//img/jayed\ hossain.png");
+            background-repeat: no-repeat;
+            background-position: top center;
         }
     </style>
 
@@ -22,9 +31,14 @@
     <script type="text/javascript">
         // document.getElementById("myInput").setAttribute("value", "Hello World");
 
-        let myElement = document.createElement("input");
+        let myElement = document.createElement("div");
         myElement.setAttribute('class', 'my-class')
-        document.body.appendChild(myElement)
+        document.body.appendChild(myElement);
+
+        // Example 2
+        const myNew = document.createElement("div");
+        myNew.setAttribute("id", "new");
+        document.body.appendChild(myNew)
     </script>
 
 </body>
